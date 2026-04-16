@@ -1,0 +1,7 @@
+C:\Users\Mateo\source\repos\Mateo Medina - Act 8\punto 3\bin\Debug\punto 3.exe.config
+C:\Users\Mateo\source\repos\Mateo Medina - Act 8\punto 3\bin\Debug\punto 3.exe
+C:\Users\Mateo\source\repos\Mateo Medina - Act 8\punto 3\bin\Debug\punto 3.pdb
+C:\Users\Mateo\source\repos\Mateo Medina - Act 8\punto 3\obj\Debug\punto 3.csproj.AssemblyReference.cache
+C:\Users\Mateo\source\repos\Mateo Medina - Act 8\punto 3\obj\Debug\punto 3.csproj.CoreCompileInputs.cache
+C:\Users\Mateo\source\repos\Mateo Medina - Act 8\punto 3\obj\Debug\punto 3.exe
+C:\Users\Mateo\source\repos\Mateo Medina - Act 8\punto 3\obj\Debug\punto 3.pdb
