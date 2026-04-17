@@ -38,7 +38,7 @@ namespace Punto_3
             float promedio = 0;
             int superar500 = 0;
             int masAlta = 0;
-            int masBaja = 100000;
+            int masBaja = puntuaciones[0];
 
 
             for (int i = 0; i < 6; i++)
