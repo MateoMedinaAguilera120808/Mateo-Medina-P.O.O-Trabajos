@@ -74,7 +74,10 @@ namespace Punto_2
                 Console.WriteLine();
             }
 
+            
+            
 
+           
 
 
 
@@ -82,8 +85,6 @@ namespace Punto_2
             Console.WriteLine("Cuantas entradas querria comprar? ");
             linea = Console.ReadLine();
             cantEnt = int.Parse(linea);
-
-
 
 
             for (int i = 0; i < (cantEnt); i++)
@@ -160,11 +161,10 @@ namespace Punto_2
             {
                 for (int j = 0; j < salas[i].Length; j++)
                 {
-                    if (salas[i][j] > 0)
-                    {
+                    
                         cont++;
                         suma = suma + salas[i][j];
-                    }
+                    
                 }
             }
             promedio = suma / cont;
