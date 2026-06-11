@@ -29,6 +29,10 @@ namespace Punto_4
 
             especie = "chiguagua";
 
+            Console.WriteLine("Animal : ");
+            Console.WriteLine("Su especie es " + especie);
+            Console.WriteLine("Esta informacion esta sacada de la clase Animal ");
+            Console.WriteLine();
         }
 
 
@@ -44,13 +48,7 @@ namespace Punto_4
 
         }
 
-        public void imprimirEspecie()
-        {
-
-            Console.WriteLine("Su especie es " + especie);
-            Console.WriteLine("Esta informacion esta sacada de la clase Animal ");
-            Console.WriteLine();
-        }
+       
 
     }
 
@@ -61,17 +59,12 @@ namespace Punto_4
         public mamifero()
         {
             TipoDeAlimentacion = "Omnivora";
-
-        }
-
-        public void imprimirDieta()
-        {
-
             Console.WriteLine("Su dieta es " + TipoDeAlimentacion);
             Console.WriteLine("Dieta pertenece a la clase mamifero ");
             Console.WriteLine();
-
         }
+
+      
 
 
     }
@@ -86,25 +79,21 @@ namespace Punto_4
         {
 
             Nombre = "Emiliano";
-
-        }
-
-        public void ImprimirNombre()
-        {
             Console.WriteLine("Su nombre es " + Nombre);
             Console.WriteLine("El nombre esta sacado de la clase Perro ");
             Console.WriteLine();
         }
+
+       
+        
 
         static void Main(string[] args)
         {
 
             Perro perro = new Perro();
 
-            Console.WriteLine("Animal : ");
-            perro.imprimirEspecie();
-            perro.imprimirDieta();
-            perro.ImprimirNombre();
+            
+            
             
             Console.ReadKey();
 
