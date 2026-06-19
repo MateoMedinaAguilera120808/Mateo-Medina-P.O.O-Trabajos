@@ -29,25 +29,7 @@ namespace Punto_1
         protected string CodigoIdentificador;
         protected double GeneracionKwh;
 
-        public DispositivoEnergia()
-        {
-            string linea;
-
-
-            Console.WriteLine("Ingrese el codigo identificador del dispositivo");
-            linea = Console.ReadLine();
-            CodigoIdentificador = linea;
-
-            Console.WriteLine("Ingrese la generacion de KiloWats por hora ");
-            linea = Console.ReadLine();
-            GeneracionKwh = double.Parse(linea);
-
-            if (GeneracionKwh < 0 )
-            {
-                GeneracionKwh = 0;
-            }
-
-        }
+        
 
 
 
@@ -79,8 +61,28 @@ namespace Punto_1
                 return GeneracionKwh;
             }
 
-        }  
-    
+        }
+
+        public DispositivoEnergia()
+        {
+            string linea;
+
+
+            Console.WriteLine("Ingrese el codigo identificador del dispositivo");
+            linea = Console.ReadLine();
+            CodigoIdentificador = linea;
+
+            Console.WriteLine("Ingrese la generacion de KiloWats por hora ");
+            linea = Console.ReadLine();
+            GeneracionKwh = double.Parse(linea);
+
+            if (GeneracionKwh < 0)
+            {
+                GeneracionKwh = 0;
+            }
+
+        }
+
         public void Imprimir()
         {
 
@@ -97,6 +99,23 @@ namespace Punto_1
     internal class PanelSolar : DispositivoEnergia
     {
         private double AreaMetros;
+
+        
+
+        public double ObtenerArea
+        {
+            set
+            {
+                AreaMetros = value;
+
+            }
+
+            get {
+            
+            return AreaMetros;
+            }
+
+        }
 
         public PanelSolar()
         {
@@ -115,21 +134,6 @@ namespace Punto_1
                     linea = Console.ReadLine();
                     AreaMetros = double.Parse(linea);
                 } while (AreaMetros <= 0);
-            }
-
-        }
-
-        public double ObtenerArea
-        {
-            set
-            {
-                AreaMetros = value;
-
-            }
-
-            get {
-            
-            return AreaMetros;
             }
 
         }

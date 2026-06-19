@@ -31,6 +31,31 @@ namespace Punto_2
 
         private int NivelSalinidad;
 
+        
+
+        public string ObtenerEspecie
+        {
+            set { Especie = value; }
+
+            get { return Especie; }
+        }
+
+        public int ObtenerProfundidad
+        {
+            set { ProfundidadOptima = value; }
+
+            get { return ProfundidadOptima; }
+
+
+        }
+
+        public int ObtenerSalinidad
+        {
+            set {  NivelSalinidad = value;}
+
+            get {  return NivelSalinidad; }
+        }
+
         public CriaturaMarina()
         {
             string linea;
@@ -64,29 +89,6 @@ namespace Punto_2
             {
                 NivelSalinidad = 35;
             }
-        }
-
-        public string ObtenerEspecie
-        {
-            set { Especie = value; }
-
-            get { return Especie; }
-        }
-
-        public int ObtenerProfundidad
-        {
-            set { ProfundidadOptima = value; }
-
-            get { return ProfundidadOptima; }
-
-
-        }
-
-        public int ObtenerSalinidad
-        {
-            set {  NivelSalinidad = value;}
-
-            get {  return NivelSalinidad; }
         }
 
     }
