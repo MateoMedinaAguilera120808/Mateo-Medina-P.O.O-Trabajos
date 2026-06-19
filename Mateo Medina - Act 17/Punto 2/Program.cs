@@ -28,41 +28,7 @@ namespace Punto_2
         private int DuracionMinutos;
         private int Calificacion;
 
-        public Pelicula()
-        {
-            string linea;
-
-
-            Console.WriteLine("ingrese el nombre de la pelicula ");
-            linea = Console.ReadLine();
-            Titulo = linea;
-
-
-            do
-            {
-                Console.WriteLine("Cuanto dura esta pelicula?");
-                linea = Console.ReadLine();
-                DuracionMinutos = int.Parse(linea);
-            }
-            while (DuracionMinutos <= 0);
-                
-            
-
-
-                Console.WriteLine("Cuanta puntuacion le da a la pelicula? (Entre 1 y 5, sino, sera 1 por defecto)");
-                linea = Console.ReadLine();
-                Calificacion = int.Parse(linea);
-
-                if (int.Parse(linea) < 1 || int.Parse(linea) > 5)
-                {
-
-                    Calificacion = 1;
-
-                }
-
-
-            
-            }
+       
 
         public string ObtenerTitulo
         {
@@ -83,6 +49,42 @@ namespace Punto_2
         {
             set {  Calificacion = value; }
             get {  return  Calificacion; }
+
+        }
+
+        public Pelicula()
+        {
+            string linea;
+
+
+            Console.WriteLine("ingrese el nombre de la pelicula ");
+            linea = Console.ReadLine();
+            Titulo = linea;
+
+
+            do
+            {
+                Console.WriteLine("Cuanto dura esta pelicula?");
+                linea = Console.ReadLine();
+                DuracionMinutos = int.Parse(linea);
+            }
+            while (DuracionMinutos <= 0);
+
+
+
+
+            Console.WriteLine("Cuanta puntuacion le da a la pelicula? (Entre 1 y 5, sino, sera 1 por defecto)");
+            linea = Console.ReadLine();
+            Calificacion = int.Parse(linea);
+
+            if (int.Parse(linea) < 1 || int.Parse(linea) > 5)
+            {
+
+                Calificacion = 1;
+
+            }
+
+
 
         }
 
