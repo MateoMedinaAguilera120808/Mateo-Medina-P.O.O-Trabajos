@@ -24,16 +24,7 @@ namespace Punto_4
     {
         protected string especie;
 
-        public Animal()
-        {
-
-            especie = "chiguagua";
-
-            Console.WriteLine("Animal : ");
-            Console.WriteLine("Su especie es " + especie);
-            Console.WriteLine("Esta informacion esta sacada de la clase Animal ");
-            Console.WriteLine();
-        }
+      
 
 
         public string obtenerEspecie { 
@@ -47,8 +38,17 @@ namespace Punto_4
             }
 
         }
+        public Animal()
+        {
 
-       
+            especie = "BullDog";
+
+            Console.WriteLine("Animal : ");
+            Console.WriteLine("Su especie es " + especie);
+            Console.WriteLine("Esta informacion esta sacada de la clase Animal ");
+            Console.WriteLine();
+        }
+
 
     }
 
@@ -78,7 +78,7 @@ namespace Punto_4
         public Perro()
         {
 
-            Nombre = "Emiliano";
+            Nombre = "Perrinho";
             Console.WriteLine("Su nombre es " + Nombre);
             Console.WriteLine("El nombre esta sacado de la clase Perro ");
             Console.WriteLine();

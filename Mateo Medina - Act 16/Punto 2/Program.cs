@@ -26,49 +26,7 @@ namespace Punto_2
         private float precio;
         private int stock;
 
-        public Producto()
-        {
-            string linea;
-
-
-            Console.WriteLine("Ingrese el nombre del producto ");
-            linea = Console.ReadLine();
-            nombre = linea;
-
-          
-      
-            for (int i = 0; i < 1;) {
-
-                Console.WriteLine("Ingrese el precio de ese producto ");
-                linea = Console.ReadLine();
-
-                if ( float.Parse(linea) <= 0) {
-
-                Console.WriteLine("El precio no puede ser menor o igual a 0 , ingrese de nuevo  ");
-            }
-            else { 
-            precio = float.Parse(linea);
-                    i++;
-            }
-
-            }
-            for (int i = 0; i < 1;)
-            {
-                Console.WriteLine("Ingrese la cantidad de stock que tiene ese producto ");
-                linea = Console.ReadLine();
-
-                if(int.Parse(linea) < 0){
-                    Console.WriteLine("No se puede tener stock en negativo, ingrese de nuevo ");
-                }
-                else
-                {
-                    stock = int.Parse(linea);
-                    i++;
-
-                }
-            }
-
-        }
+        
 
         public string Nombre
         {
@@ -112,6 +70,53 @@ namespace Punto_2
 
         }
 
+        public Producto()
+        {
+            string linea;
+
+
+            Console.WriteLine("Ingrese el nombre del producto ");
+            linea = Console.ReadLine();
+            nombre = linea;
+
+
+
+            for (int i = 0; i < 1;)
+            {
+
+                Console.WriteLine("Ingrese el precio de ese producto ");
+                linea = Console.ReadLine();
+
+                if (float.Parse(linea) <= 0)
+                {
+
+                    Console.WriteLine("El precio no puede ser menor o igual a 0 , ingrese de nuevo  ");
+                }
+                else
+                {
+                    precio = float.Parse(linea);
+                    i++;
+                }
+
+            }
+            for (int i = 0; i < 1;)
+            {
+                Console.WriteLine("Ingrese la cantidad de stock que tiene ese producto ");
+                linea = Console.ReadLine();
+
+                if (int.Parse(linea) < 0)
+                {
+                    Console.WriteLine("No se puede tener stock en negativo, ingrese de nuevo ");
+                }
+                else
+                {
+                    stock = int.Parse(linea);
+                    i++;
+
+                }
+            }
+
+        }
     }
 
 

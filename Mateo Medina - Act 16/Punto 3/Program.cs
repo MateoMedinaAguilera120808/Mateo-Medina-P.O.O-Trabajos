@@ -24,20 +24,7 @@ namespace Punto_3
         protected float velocidadMaxima;
 
 
-        public vehiculo()
-        {
-            string linea;
-
-            Console.WriteLine("Ingrese la marca del vehiculo ");
-            linea = Console.ReadLine();
-            marca = linea;
-
-            Console.WriteLine("Ingrese la velocidad maxima capaz del vehiculo ");
-            linea = Console.ReadLine();
-            velocidadMaxima = float.Parse(linea);
-
-
-        }
+        
 
 
 
@@ -76,7 +63,20 @@ namespace Punto_3
 
 
         }
+        public vehiculo()
+        {
+            string linea;
 
+            Console.WriteLine("Ingrese la marca del vehiculo ");
+            linea = Console.ReadLine();
+            marca = linea;
+
+            Console.WriteLine("Ingrese la velocidad maxima capaz del vehiculo ");
+            linea = Console.ReadLine();
+            velocidadMaxima = float.Parse(linea);
+
+
+        }
 
 
     }
@@ -88,18 +88,7 @@ namespace Punto_3
         
 
 
-        public motos()
-        {
-            string linea;
-
-            
-
-
-            Console.WriteLine("Ingrese la cilindrada de la moto ");
-            linea = Console.ReadLine();
-            cilindrada = int.Parse(linea);
-
-        }
+       
 
         public int obtenerCilindrada
         {
@@ -110,6 +99,19 @@ namespace Punto_3
             get { 
             return cilindrada;
             }
+        }
+
+        public motos()
+        {
+            string linea;
+
+
+
+
+            Console.WriteLine("Ingrese la cilindrada de la moto ");
+            linea = Console.ReadLine();
+            cilindrada = int.Parse(linea);
+
         }
 
         public void imprimir()
@@ -133,18 +135,7 @@ namespace Punto_3
          int cantPuertas;
         
 
-        public autos()
-        {
-            string linea;
-
-            
-
-            Console.WriteLine("Ingrese la cantidad de puertas del auto ");
-            linea = Console.ReadLine();
-            cantPuertas = int.Parse(linea);
-
-
-        }
+       
 
 
         public int obtenerCantPuertas
@@ -158,6 +149,19 @@ namespace Punto_3
 
                 return cantPuertas;
             }
+
+
+        }
+
+        public autos()
+        {
+            string linea;
+
+
+
+            Console.WriteLine("Ingrese la cantidad de puertas del auto ");
+            linea = Console.ReadLine();
+            cantPuertas = int.Parse(linea);
 
 
         }
